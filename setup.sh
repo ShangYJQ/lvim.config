@@ -1,2 +1,2 @@
-mkdir -r ~/.config/lvim/
+mkdir -p ~/.config/lvim/
 cp -r ./* ~/.config/lvim/
