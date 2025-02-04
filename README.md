@@ -1,1 +1,1 @@
-在pull后，运行 setup.sh 将配置文件覆盖生效。
+# 在pull后，运行 setup.sh 将配置文件覆盖生效
