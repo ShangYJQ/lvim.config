@@ -16,6 +16,8 @@ lvim.keys.normal_mode["<C-x>"] = "D<CR>"
 lvim.keys.normal_mode["<C-k>"] = ":bn<CR>"
 lvim.keys.normal_mode["<C-j>"] = ":bp<CR>"
 
+lvim.keys.normal_mode["<A-m>"] = ":FineCmdline<CR>"
+
 -- set terminal
 lvim.builtin["terminal"].shell = "/bin/bash"
 lvim.builtin["terminal"].direction = "vertical"
@@ -51,7 +53,6 @@ lvim.autocommands = {
 
 lvim.builtin.telescope.defaults.path_display = { 'truncate' }
 
-
 lvim.builtin.treesitter.ensure_installed = {
   'bash',
   'c',
@@ -73,6 +74,7 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- imporve the mason-registry download
 lvim.builtin.mason.registries = { "github:mason-org/mason-registry@2025-02-05-tasty-liar" }
 
+-- speed up the mason download of github
 lvim.builtin.mason.github = { download_url_template = "https://051030.xyz/%s/releases/download/%s/%s" }
 
 vim.opt.relativenumber = true
@@ -96,14 +98,11 @@ lvim.plugins = {
         char = { enabled = false }
       }
     },
-    -- stylua: ignore
     keys = {
       { "/",     mode = { "n", "x", "o" }, function() require("flash").jump() end,       desc = "Flash" },
       { "<a-/>", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
     },
   }
 }
-
-lvim.keys.normal_mode["<A-m>"] = ":FineCmdline<CR>"
 
 require("nvim-treesitter.install").prefer_git = true
