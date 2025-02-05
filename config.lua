@@ -101,3 +101,5 @@ lvim.plugins = {
 }
 
 lvim.keys.normal_mode["<A-m>"] = ":FineCmdline<CR>"
+
+require("nvim-treesitter.install").prefer_git = true
