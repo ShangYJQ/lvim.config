@@ -16,7 +16,7 @@ lvim.keys.normal_mode["<C-x>"] = "D<CR>"
 lvim.keys.normal_mode["<C-k>"] = ":bn<CR>"
 lvim.keys.normal_mode["<C-j>"] = ":bp<CR>"
 
-
+-- set terminal
 lvim.builtin["terminal"].shell = "/bin/bash"
 lvim.builtin["terminal"].direction = "vertical"
 lvim.builtin["terminal"].size = 31
@@ -25,10 +25,13 @@ lvim.colorscheme = "lunar"
 
 lvim.format_on_save.enabled = true
 
+-- set nvimtree
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.view.width = 25
 
+
+-- add open nvimtree action
 lvim.autocommands = {
   {
     'VimEnter',
@@ -70,8 +73,11 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- imporve the mason-registry download
 lvim.builtin.mason.registries = { "github:mason-org/mason-registry@2025-02-05-tasty-liar" }
 
+lvim.builtin.mason.github = { download_url_template = "https://051030.xyz/%s/releases/download/%s/%s" }
+
 vim.opt.relativenumber = true
 
+-- my user plugins
 lvim.plugins = {
   {
     'VonHeikemen/fine-cmdline.nvim',
