@@ -1,4 +1,5 @@
 -- Creat by ShangYJQ QAQ
+
 -- keymaps
 lvim.keys.normal_mode["<C-q>"] = ":q!<CR>"
 lvim.keys.insert_mode["<C-q>"] = "<Esc>"
@@ -32,7 +33,6 @@ lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.view.width = 25
 
-
 -- add open nvimtree action
 lvim.autocommands = {
   {
@@ -53,6 +53,7 @@ lvim.autocommands = {
 
 lvim.builtin.telescope.defaults.path_display = { 'truncate' }
 
+-- some ts setting
 lvim.builtin.treesitter.ensure_installed = {
   'bash',
   'c',
@@ -70,9 +71,10 @@ lvim.builtin.treesitter.ensure_installed = {
 }
 
 lvim.builtin.treesitter.highlight.enabled = true
+require("nvim-treesitter.install").prefer_git = true
 
--- imporve the mason-registry download
-lvim.builtin.mason.registries = { "github:mason-org/mason-registry@2025-02-05-tasty-liar" }
+-- if your mason download has connection error,use the following line.
+-- lvim.builtin.mason.registries = { "github:mason-org/mason-registry@2025-02-05-tasty-liar" }
 
 -- speed up the mason download of github
 lvim.builtin.mason.github = { download_url_template = "https://051030.xyz/%s/releases/download/%s/%s" }
@@ -104,5 +106,3 @@ lvim.plugins = {
     },
   }
 }
-
-require("nvim-treesitter.install").prefer_git = true
