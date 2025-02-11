@@ -18,3 +18,7 @@ lvim.keys.normal_mode["<C-k>"] = ":bn<CR>"
 lvim.keys.normal_mode["<C-j>"] = ":bp<CR>"
 
 lvim.keys.normal_mode["<A-m>"] = ":FineCmdline<CR>"
+
+lvim.builtin.which_key.mappings["r"] = {
+  "<cmd>Autorun<CR>", "Run your code",
+}
