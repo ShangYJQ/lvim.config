@@ -1,6 +1,20 @@
 -- my user plugins
 lvim.plugins = {
   {
+    'ShangYJQ/autorun.nvim',
+    dependencies = {
+      { 'akinsho/toggleterm.nvim' },
+    },
+    config = function()
+      require("autorun").setup {
+        py_exec = "python3",
+        cpp_c = "clang++",
+        c_c = "clang",
+
+      }
+    end
+  },
+  {
     'VonHeikemen/fine-cmdline.nvim',
     dependencies = {
       { 'MunifTanjim/nui.nvim' }
