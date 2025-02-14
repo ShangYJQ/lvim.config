@@ -12,7 +12,7 @@ lvim.keys.normal_mode["<C-c>"] = "Y<CR>"
 
 lvim.keys.normal_mode["<C-v>"] = "p<CR>"
 
-lvim.keys.normal_mode["<C-x>"] = "D<CR>"
+lvim.keys.normal_mode["<C-x>"] = "dd<CR>"
 
 lvim.keys.normal_mode["<C-k>"] = ":bn<CR>"
 lvim.keys.normal_mode["<C-j>"] = ":bp<CR>"
