@@ -23,6 +23,3 @@ reload "user.terminal"
 
 -- set nvimtree
 reload "user.nvimtree"
-
--- set noice
-reload "user.noice"
