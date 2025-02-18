@@ -4,7 +4,7 @@ lvim.autocommands = {
     'VimEnter',
     {
       pattern = { '*' },
-      command = 'NvimTreeToggle'
+      command = 'Neotree toggle'
     }
   },
   {

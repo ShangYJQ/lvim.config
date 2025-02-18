@@ -21,5 +21,8 @@ reload "user.mason"
 -- set terminal
 reload "user.terminal"
 
--- set nvimtree
-reload "user.nvimtree"
+-- set neo-tree
+reload "user.neo-tree"
+
+-- set bufferline
+reload "user.bufferline"

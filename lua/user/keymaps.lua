@@ -14,9 +14,15 @@ lvim.keys.normal_mode["<C-v>"] = "p<CR>"
 
 lvim.keys.normal_mode["<C-x>"] = "dd<CR>"
 
-lvim.keys.normal_mode["<C-k>"] = ":bn<CR>"
-lvim.keys.normal_mode["<C-j>"] = ":bp<CR>"
+lvim.keys.normal_mode["<C-k>"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["<C-j>"] = ":BufferLineCyclePrev<CR>"
+lvim.keys.normal_mode["<M-k>"] = ":BufferKill<CR>"
+
 
 lvim.builtin.which_key.mappings["r"] = {
   "<cmd>Autorun<CR>", "Run your code",
+}
+
+lvim.builtin.which_key.mappings["e"] = {
+  "<cmd>Neotree toggle<CR>", "Explorer",
 }
