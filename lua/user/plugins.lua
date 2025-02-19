@@ -10,7 +10,6 @@ lvim.plugins = {
         py_exec = "python3",
         cpp_c = "clang++",
         c_c = "clang",
-
       }
     end
   },

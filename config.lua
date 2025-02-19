@@ -26,3 +26,6 @@ reload "user.neo-tree"
 
 -- set bufferline
 reload "user.bufferline"
+
+-- set dap
+reload "user.dap"

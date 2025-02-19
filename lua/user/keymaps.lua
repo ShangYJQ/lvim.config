@@ -16,11 +16,13 @@ lvim.keys.normal_mode["<C-x>"] = "dd<CR>"
 
 lvim.keys.normal_mode["<C-k>"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["<C-j>"] = ":BufferLineCyclePrev<CR>"
-lvim.keys.normal_mode["<M-k>"] = ":BufferKill<CR>"
-
 
 lvim.builtin.which_key.mappings["r"] = {
   "<cmd>Autorun<CR>", "Run your code",
+}
+
+lvim.builtin.which_key.mappings["R"] = {
+  "<cmd>Autodap<CR>", "Dap your cpp code",
 }
 
 lvim.builtin.which_key.mappings["e"] = {
